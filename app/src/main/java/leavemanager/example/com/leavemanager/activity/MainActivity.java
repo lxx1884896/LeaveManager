@@ -42,6 +42,7 @@ public class MainActivity extends Activity {
         transaction.commit();
 
         mRadioLeave.setSelected(true);
+        mRadioLeave.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
 
     }
     class MyRadioGroupListener implements RadioGroup.OnCheckedChangeListener {
@@ -93,33 +94,34 @@ public class MainActivity extends Activity {
      */
     private void setLeaveState() {
         if (mRadioLeave.isChecked()) {
-            mRadioLeave.setTextColor(ContextCompat.getColor(this, R.color.colorPrimary));
+            //mRadioLeave.setTextColor(ContextCompat.getColor(this, R.color.colorPrimary));
+            mRadioLeave.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
         } else {
-            mRadioLeave.setTextColor(ContextCompat.getColor(this, R.color.black));
+            mRadioLeave.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
         }
     }
 
     private void setPermitState() {
         if (mRadioPermit.isChecked()) {
-            mRadioPermit.setTextColor(ContextCompat.getColor(this, R.color.colorPrimary));
+            mRadioPermit.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
         } else {
-            mRadioPermit.setTextColor(ContextCompat.getColor(this, R.color.black));
+            mRadioPermit.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
         }
     }
 
     private void setReportbackState() {
         if (mRadioReportback.isChecked()) {
-            mRadioReportback.setTextColor(ContextCompat.getColor(this, R.color.colorPrimary));
+            mRadioReportback.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
         } else {
-            mRadioReportback.setTextColor(ContextCompat.getColor(this, R.color.black));
+            mRadioReportback.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
         }
     }
 
     private void setMineState() {
         if (mRadioMine.isChecked()) {
-            mRadioMine.setTextColor(ContextCompat.getColor(this, R.color.colorPrimary));
+            mRadioMine.setBackgroundColor(ContextCompat.getColor(this, R.color.colorPrimary));
         } else {
-            mRadioMine.setTextColor(ContextCompat.getColor(this, R.color.black));
+            mRadioMine.setBackgroundColor(ContextCompat.getColor(this, R.color.white));
         }
     }
 }
