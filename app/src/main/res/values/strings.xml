@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LeaveManager</string>
+    <string name="leave">请假</string>
+    <string name="permit">批假</string>
+    <string name="reportback">销假</string>
+    <string name="mine">我的</string>
+</resources>
